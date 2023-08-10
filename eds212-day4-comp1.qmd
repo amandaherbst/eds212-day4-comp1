@@ -11,3 +11,36 @@ rain <- c(3, 5, 10.1, 6)
 
 rain_scaled <- 5 * rain
 ```
+
+## Create matrices
+
+```{r}
+# make one long vector, then wrap into a matrix row by row
+
+my_values <- seq(from = 1, to = 10)
+
+my_matrix <- matrix(data = my_values, nrow = 2, ncol = 5, byrow = TRUE)
+```
+
+```{r}
+# since matrix is not exact multiple lengths of sequence, it starts repeating sequence to fill in gaps
+my_matrix2 <- matrix(data = my_values, nrow = 3, ncol = 4, byrow = TRUE)
+```
+
+```{r}
+# return after every comma for better readability
+matrixA <- matrix(data = seq(from = 2, 
+                             to = 5, 
+                             length = 10), 
+                  nrow = 2, 
+                  ncol = 5, 
+                  byrow = TRUE)
+```
+
+```{r}
+# matrix math!
+# same dimensions so we can add/subrtract
+my_matrix + matrixA
+```
+
+## Matrix Multiplication
